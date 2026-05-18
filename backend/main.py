@@ -18,7 +18,7 @@ app = FastAPI(
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "https://customer-churn-prediction-plum-pi.vercel.app/api/v1"
+        "https://customer-churn-prediction-plum-pi.vercel.app"
     ],
     allow_credentials=True,
     allow_methods=["*"],

@@ -17,7 +17,9 @@ app = FastAPI(
 # Configure CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"], # In production, restrict this
+    allow_origins=[
+        "https://customer-churn-prediction-plum-pi.vercel.app/api/v1"
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

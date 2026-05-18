@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = "https://customer-churn-backend-0xco.onrender.com";
+const API_URL = "https://customer-churn-backend-0xco.onrender.com/api";
 export const api = axios.create({
   baseURL: API_URL,
 });

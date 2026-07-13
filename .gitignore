@@ -5,3 +5,7 @@ dist
 build
 .env
 *.db
+data/
+.venv/
+.pytest_cache/
+.vscode/

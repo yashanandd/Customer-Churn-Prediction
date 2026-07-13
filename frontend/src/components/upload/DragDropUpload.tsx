@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import { uploadDataset, trainModel } from '../../services/api';
 
 interface DragDropUploadProps {
-  onUploadSuccess: () => void;
+  onUploadSuccess: (filename: string) => void;
 }
 
 const DragDropUpload: React.FC<DragDropUploadProps> = ({ onUploadSuccess }) => {
@@ -50,7 +50,7 @@ const DragDropUpload: React.FC<DragDropUploadProps> = ({ onUploadSuccess }) => {
       const result = await trainModel('rf'); // Default Random Forest
       setMetrics(result);
       setSuccessMsg("Model trained successfully!");
-      onUploadSuccess();
+      onUploadSuccess(file.name);
       
     } catch (err: any) {
       setError(err.response?.data?.detail || "An error occurred");

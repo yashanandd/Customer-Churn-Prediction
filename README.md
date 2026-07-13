@@ -13,16 +13,21 @@ ChurnAI is a premium, full-stack customer churn prediction dashboard built with 
 
 ## 📸 Visual Showcase
 
+Screenshots from the deployed application include the full workflow of the user experience:
+
 | 🔐 Authentication Portal | 📁 Main Page - Upload Workspace |
 | --- | --- |
+| ![Login Screen](Screenshots/login.png) | ![Upload Workspace](Screenshots/upload_workspace.png) |
 | *Frosted glass login, registration, and OTP password recovery.* | *Drag & drop CSV zones with SQLite-powered historical uploads tracking.* |
 
 | 📊 Overview Dashboard | 📈 Segment Analytics |
 | --- | --- |
+| ![Dashboard Overview](Screenshots/dashboard_overview.png) | ![Analytics Deep Dive](Screenshots/analytics_deep_dive.png) |
 | *Active AI Model metrics header, KPIs, and monthly churn trends.* | *Recharts visualizations breaking down contract and payment ratios.* |
 
 | 🗂️ Customer Risk Directory | 🔮 Profile Simulator Ledger |
 | --- | --- |
+| ![Customer Directory](Screenshots/customer_directory.png) | ![Single Predictor](Screenshots/single_predictor.png) |
 | *Paginated risk grid with search filters and CSV report exports.* | *Manual account predictor with gauge verdicts and dynamic AI advice.* |
 
 ---

@@ -12,7 +12,6 @@ import AuthPage from './components/auth/AuthPage';
 import ChangePasswordModal from './components/auth/ChangePasswordModal';
 import { getKPIs, getTrends, getDepartmentChurn, getInsights, getModelMetrics } from './services/api';
 import { RefreshCw, Activity, User as UserIcon, LogOut } from 'lucide-react';
-import { motion } from 'framer-motion';
 
 function App() {
   // Authentication state

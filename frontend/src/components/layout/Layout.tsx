@@ -10,7 +10,14 @@ interface LayoutProps {
 const Layout: React.FC<LayoutProps> = ({ children, activeTab, setActiveTab }) => {
   return (
     <div className="flex min-h-screen bg-background text-gray-100">
-      <Sidebar activeTab={activeTab} setActiveTab={setActiveTab} />
+      <Sidebar
+        activeTab={activeTab}
+        setActiveTab={setActiveTab}
+        onBackToUploads={() => {}}
+        onLogout={() => {}}
+        onChangePasswordOpen={() => {}}
+        user={null}
+      />
       <main className="flex-1 ml-64 p-8 overflow-y-auto">
         {children}
       </main>

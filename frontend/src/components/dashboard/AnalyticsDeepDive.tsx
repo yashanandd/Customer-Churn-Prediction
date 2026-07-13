@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { ResponsiveContainer, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, PieChart, Pie, Cell } from 'recharts';
 import { getDepartmentChurn, getKPIs } from '../../services/api';
-import { RefreshCw, BarChart2, PieChart as PieIcon, TrendingUp } from 'lucide-react';
+import { RefreshCw, BarChart2, PieChart as PieIcon } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const AnalyticsDeepDive: React.FC = () => {
@@ -109,7 +109,7 @@ const AnalyticsDeepDive: React.FC = () => {
             <BarChart2 className="w-5 h-5 text-primary" />
             <h3 className="text-lg font-bold text-white">Segment-wise Churn Breakdown</h3>
           </div>
-          
+
           <div className="h-[300px] w-full">
             <ResponsiveContainer width="100%" height="100%">
               <BarChart data={deptData} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
@@ -118,7 +118,7 @@ const AnalyticsDeepDive: React.FC = () => {
                 <YAxis stroke="rgba(255,255,255,0.4)" tickLine={false} style={{ fontSize: 11 }} />
                 <Tooltip cursor={{ fill: 'rgba(255,255,255,0.02)' }} content={<CustomTooltip />} />
                 <Bar dataKey="churn" name="Churned Users" fill="#4F46E5" radius={[6, 6, 0, 0]}>
-                  {deptData.map((entry, index) => (
+                  {deptData.map((_: any, index: number) => (
                     <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                   ))}
                 </Bar>
@@ -138,7 +138,7 @@ const AnalyticsDeepDive: React.FC = () => {
             <PieIcon className="w-5 h-5 text-secondary" />
             <h3 className="text-lg font-bold text-white">Churn Share Distribution</h3>
           </div>
-          
+
           <div className="h-[300px] w-full flex items-center justify-center">
             <ResponsiveContainer width="100%" height="100%">
               <PieChart>
@@ -152,14 +152,14 @@ const AnalyticsDeepDive: React.FC = () => {
                   dataKey="churn"
                   nameKey="department"
                 >
-                  {deptData.map((entry, index) => (
+                  {deptData.map((_, index) => (
                     <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                   ))}
                 </Pie>
                 <Tooltip content={<CustomTooltip />} />
-                <Legend 
-                  verticalAlign="bottom" 
-                  height={36} 
+                <Legend
+                  verticalAlign="bottom"
+                  height={36}
                   iconType="circle"
                   formatter={(value) => <span className="text-xs text-gray-300 font-semibold">{value}</span>}
                 />

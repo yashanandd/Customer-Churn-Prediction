@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { predictChurn, getPredictionHistory } from '../../services/api';
-import { ShieldAlert, RefreshCw, AlertTriangle, ShieldCheck, HelpCircle, ChevronRight, Clock, UserCheck } from 'lucide-react';
+import { ShieldAlert, RefreshCw, AlertTriangle, ShieldCheck, Clock, UserCheck } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const SinglePredictor: React.FC = () => {

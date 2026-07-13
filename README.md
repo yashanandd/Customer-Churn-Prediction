@@ -2,7 +2,6 @@
 
 **ChurnAI** is a modern, end-to-end customer churn prediction platform that turns standard subscriber datasets into actionable retention intelligence. Built with React, TypeScript, Tailwind CSS, FastAPI, SQLite, and Scikit-Learn, it supports secure authentication, dataset uploads, user-isolated model training, interactive analytics, and AI-driven retention recommendations.
 
-**Author:** Yash Anand
 
 ---
 

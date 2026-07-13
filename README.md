@@ -126,6 +126,11 @@ Activate the virtual environment:
 source venv/bin/activate
 ```
 
+Install backend dependencies:
+```bash
+pip install -r requirements.txt
+```
+
 Start the FastAPI application:
 ```bash
 uvicorn main:app --reload
@@ -137,6 +142,11 @@ The backend API server will run locally at `http://localhost:8000`.
 Open a new terminal and navigate to the frontend directory:
 ```bash
 cd frontend
+```
+
+Install frontend dependencies:
+```bash
+npm install
 ```
 
 Start the Vite dev server:

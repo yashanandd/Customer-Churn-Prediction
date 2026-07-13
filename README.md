@@ -1,6 +1,8 @@
 # ChurnAI - AI Customer Churn Prediction Dashboard
 
-ChurnAI is a premium, full-stack customer churn prediction dashboard built with React, FastAPI, and Scikit-Learn. It identifies customer churn hazards, displays segment analytics, and recommends retention playbooks using SQLite storage and a frosted glassmorphic UI.
+**ChurnAI** is a modern, end-to-end customer churn prediction platform that turns standard subscriber datasets into actionable retention intelligence. Built with React, TypeScript, Tailwind CSS, FastAPI, SQLite, and Scikit-Learn, it supports secure authentication, dataset uploads, user-isolated model training, interactive analytics, and AI-driven retention recommendations.
+
+**Author:** Yash Anand
 
 ---
 
@@ -160,3 +162,20 @@ The frontend client will run locally at `http://localhost:5173`. Open this URL i
 3. **Analyzing Customer Churn**:
    * Click **Customer Risk** to search for individual subscribers and filter risk ratings. Click **Export CSV Report** to download the list.
    * Navigate to **Single Predictor** to manually adjust contract plans or bills and observe the dynamic churn verdict.
+
+---
+
+## 👤 Author
+
+* **Yash Anand** — Creator of ChurnAI, focused on building polished end-to-end AI workflows for customer retention analysis and deployment-ready user experiences.
+
+---
+
+## 📝 Project Summary
+
+* **Secure login and account management** with OTP password recovery.
+* **User-scoped dataset uploads** that train custom churn models automatically.
+* **Live analytics and insights** with KPI cards, churn trends, and segment charts.
+* **AI-driven recommendations** for retention strategies based on churn drivers.
+* **Customer churn directory** with search, filtering, and export support.
+* **Individual churn simulator** for on-demand probability forecasts.
